@@ -27,13 +27,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
 
 </head>
 
 <body>
 
     <div class="brand">Kevin Mitchell</div>
-    <div class="address-bar">333 Somewhere, Lane | Just Next Door, Il 99999 | 123.456.7890</div>
+    <div class="address-bar">Greater Chicago Area</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -111,8 +112,8 @@
                     <h1 class="brand-name">My webpage</h1>
                     <hr class="tagline-divider">
                     <h2>
-                        <small>By
-                            <strong>Start Bootstrap</strong>
+                        <small>
+                            <strong></strong>
                         </small>
                     </h2>
                 </div>
@@ -120,8 +121,9 @@
         </div>
 
         <div class="row">
-            <div class="box">
+           <div class="box">
                 <div class="col-lg-12">
+                
                     <hr>
                     <h2 class="intro-text text-center">Build a website
                         <strong>worth visiting</strong>
@@ -132,6 +134,7 @@
                     <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
                     <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
                 </div>
             </div>
         </div>
@@ -140,8 +143,8 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Beautiful boxes
-                        <strong>to showcase your content</strong>
+                    <h2 class="intro-text text-center">Projects
+                        <strong></strong>
                     </h2>
                     <hr>
                     <p>Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!</p>
@@ -157,7 +160,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -175,6 +178,45 @@
         interval: 5000 //changes the speed
     })
     </script>
+    
+         <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <div id="container" style="width:400px; height:400px; text-align: center;"></div> 
+                        
+                        <script>
+                            $(function () { 
+                            var myChart = Highcharts.chart('container', {
+                            chart: {
+                                type: 'bar'
+                            },
+                            title: {
+                                text: 'Fruit Consumption'
+                            },
+                            xAxis: {
+                                categories: ['Apples', 'Bananas', 'Oranges']
+                            },
+                            yAxis: {
+                                title: {
+                                    text: 'Fruit eaten'
+                                }
+                            },
+                            series: [{
+                                name: 'Jane',
+                                data: [1, 0, 4]
+                            }, {
+                                name: 'John',
+                                data: [5, 7, 3]
+                            }]
+                        });
+                    });
+                        </script>
+                    
+                </div>
+            </div>
+        </div>
+
+    
 
 </body>
 
